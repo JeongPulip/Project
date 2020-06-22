@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+#container {
+	flex-direction: column;
+	width: 80%;
+	margin: auto;
+	height: 450px;
+}
+
+.pwcheck_block {
+	border: 1px solid;
+	width: 80%;
+	height: 300px;
+	margin: 50px auto;
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+}
+
+.pwcheck_Title {
+	font-size: 30px;
+	text-align: center;
+}
+
+.pwcheck_input_block {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 80px;
+	margin-bottom: 40px;
+}
+
+.pwcheck_Input_Title{
+	font-size: 20px;
+	padding: 5px ;
+}
+.pwcheck_Input>input[type="password"]{
+	border: 1px thick gray;
+	padding: 5px ;
+	width: 250px;
+	vertical-align: baseline;
+}
+
+.pwcheck_button>input[type="submit"]{
+	width: 100px;
+    margin: 0 auto;
+    height: 30px;
+    background: #9BCE58;
+    color: white;
+    outline: none;
+    border: 3px solid;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.pwcheck_button>input[type="submit"]:hover{
+	background: white;
+	color: #9BCE58;
+}
+
+.pwcheck_button>input[type="button"]{
+	width: 100px;
+    margin: 0 auto;
+    height: 30px;
+    background: #DDE787;
+    color: white;
+    outline: none;
+    border: 3px solid;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.pwcheck_button>input[type="button"]:hover{
+	background: white;
+	color: #DDE787;
+}
+}
+

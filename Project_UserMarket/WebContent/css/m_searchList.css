@@ -1,0 +1,288 @@
+@charset "UTF-8";
+
+html body, .accordion {
+	font-family: 'Jua', sans-serif;
+}
+
+#category {
+	float: left;
+	flex-direction: column;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.accordion {
+	flex-direction: row;
+	background-color: white;
+	color: #444;
+	cursor: pointer;
+	padding: 10px;
+	width: 100%;
+	text-align: left;
+	border: 2px solid #9BCE58;
+	outline: none;
+	transition: 0.4s;
+	font-size: 20px;
+}
+
+.active, .accordion:hover {
+	background-color: #9BCE58;
+	color: white;
+}
+
+.panel {
+	background-color: white;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	text-align: left;
+	font-size: 20px;
+}
+
+.panel.active {
+	height: 200px;
+}
+
+.accordion:after {
+	content: '\02795'; /* Unicode character for "plus" sign (+) */
+	font-size: 13px;
+	color: #777;
+	float: right;
+	margin-left: 5px;
+}
+
+#category>.active:after {
+	content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/* 게시물 설정 */
+.mainList {
+	width: 100%;
+	flex-direction: column;
+	display: flex;
+	float: left;
+	flex-wrap: wrap;
+}
+
+.boardText {
+	font-size: 30px;
+	text-align: center;
+}
+
+button[name=place] {
+	background: white;
+	border-color: #9BCE58;
+	border-radius: 5px;
+	color: #9BCE58;
+	font-weight: bold;
+}
+
+button[name=place]:hover {
+	background: #9BCE58;
+	color: white;
+}
+
+#addBtn>button {
+	display: inline;
+	/* float: right; */
+	width: 200px;
+	margin: 20px auto;
+	height: 50px;
+	background: #9BCE58;
+	color: white;
+	outline: none;
+	border: 3px solid;
+	font-size: 20px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+#addBtn>button:hover {
+	background: white;
+	color: #9BCE58;
+}
+
+/* 게시글 아이콘 */
+#section_search {
+	display: inline-block;
+	width: 100%;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	display: inline-block;
+	float: left;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+article {
+	border: 0px solid;
+	border-radius: 10px;
+	display: inline-block;
+	margin: 10px;
+	padding: 10px 0 10px 0;
+	width: 130px;
+	height: 230px;
+	cursor: pointer;
+}
+
+/* article:hover{
+	border: 1px solid; 
+	padding: 9px 1px 9px 1px;
+}
+ */
+article>img {
+	width: 130px;
+	height: 130px;
+}
+
+.info {
+	flex-direction: row;
+	flex-wrap: wrap-reverse;
+	margin-bottom: 30px;
+}
+
+.ListText {
+	text-align: left;
+	margin: 0px;
+	padding: 2px;
+}
+
+.list_Num {
+	float: left;
+}
+
+.list_State {
+	float: right;
+}
+
+.list_Title, .list_Location, .list_Price {
+	margin: 10px;
+}
+
+.list_Location {
+	color: #808080;
+}
+
+.list_Tilte {
+	font-weight: bolder;
+	font-size: 12px;
+}
+
+.list_Price {
+	color: #fab82e;
+}
+
+/* 페이지 */
+.moreList>a {
+	border: 1px thick;
+	text-align: center;
+	margin: 5px;
+	padding: 1px;
+}
+
+.moreList>a:hover {
+	background: green;
+	border-radius: 50px;
+}
+
+.moreList>a.active {
+	background: green;
+	border-radius: 50px;
+}
+
+.search_Product_Id>input[type="radio"] {
+	display: none;
+}
+
+.search_Product_Id>input[type="radio"]+span {
+	padding: 5 5px;
+}
+
+.search_Product_Id>input[type="radio"]:checked+span {
+	background: #DDE787;
+	padding-right: 60%;
+}
+
+#search_Category_Btn {
+	width: 100px;
+	margin: 0 auto;
+	height: 30px;
+	background: #9BCE58;
+	color: white;
+	outline: none;
+	border: 3px solid;
+	font-size: 15px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+#search_Category_Btn:hover {
+	background: white;
+	color: #9BCE58;
+}
+
+input[type="reset"] {
+	width: 100px;
+	margin: 0 auto;
+	height: 30px;
+	background: #DDE787;
+	color: white;
+	outline: none;
+	border: 3px solid;
+	font-size: 15px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+input[type="reset"]:hover {
+	background: white;
+	color: #DDE787;
+}
+
+input[type="text"] {
+	font-family: inherit;
+	border: 0;
+	border-bottom: 1px solid;
+	width: 80%;
+	padding: 5px;
+	margin: 10px;
+	outline: none;
+}
+
+ul {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	display: inline-block;
+}
+
+ul li:hover {
+	background: #ffec83;
+}
+
+ul li:hover ul {
+	display: block;
+}
+
+ul li ul {
+	position: absolute;
+	width: 100px;
+	display: none;
+}
+
+ul li ul li {
+	background: #ffec83;
+	display: block;
+	font-size: 14px;
+}
+
+ul li ul li a {
+	display: block !important;
+}
+
+ul li ul li:hover {
+	background: #ffec83;
+}

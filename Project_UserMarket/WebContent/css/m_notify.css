@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+#container {
+	flex-direction: column;
+	margin: 0 20px;
+	width: 80%;
+}
+
+.notify_Title {
+	position: relative;
+	font-size: 40px;
+	margin-top: 50px;
+	text-align: left;
+}
+
+.notify_Ptag {
+	width: 100%;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    border-right-color: rgb(96, 199, 216);
+    border-left-color: rgb(221, 231, 135);
+    background: linear-gradient(to left, rgb(96, 199, 216) 0%, rgb(96, 199, 216) 70%, transparent 70%, transparent 85%, rgb(221, 231, 135) 85%, rgb(221, 231, 135) 100%) top/100% 2px, linear-gradient(to left, rgb(221, 231, 135) 0%, rgb(96, 199, 216) 100%) bottom/100% 2px;
+    background-repeat: no-repeat;
+    margin: 50px auto;
+    padding: 10px;
+    font-size: 13px;
+}
+
+.notify_Ptag>p {
+	color: red;
+	display: inline;
+}
+
+.notify_SubTitle {
+	font-size: 30px;
+	text-align: left;
+}
+
+.notify_Report{
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    /* left: -45px; */
+    /* top: -25px; */
+    border-right-color: rgb(96, 199, 216);
+    border-left-color: rgb(221, 231, 135);
+    background: linear-gradient(to left, rgb(96, 199, 216) 0%, rgb(96, 199, 216) 70%, transparent 70%, transparent 85%, rgb(221, 231, 135) 85%, rgb(221, 231, 135) 100%) top/100% 2px, linear-gradient(to left, rgb(221, 231, 135) 0%, rgb(96, 199, 216) 100%) bottom/100% 2px;
+    background-repeat: no-repeat;
+}
+
+.notify_Report_Select{
+	text-align: center;
+    padding: 10px;
+    width: 200px;
+    margin: 20px 0;
+}
+
+.notify_Report_Select>select{
+	height: 25px;
+	font-family: inherit;
+	font-size: 15px;
+}
+
+.notify_Report_Select>.notify_Report_Title{
+	border-right: 1px solid;
+	padding-right: 20px;
+	height: 100px;
+}
+
+.notify_Report>form>textarea{
+	width: 100%;
+	height: 100px;
+	margin: 10px 0 20px 0;
+	resize: none;
+	font-family: inherit;
+	font-size: 20px;
+}
+
+.notify_Report>form>input[type="submit"]{
+	width: 200px;
+    margin: 0 auto;
+    height: 50px;
+    background: #9BCE58;
+    color: white;
+    outline: none;
+    border: 3px solid;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.notify_Report>form>input[type="submit"]:hover{
+	background: white;
+	color: #9BCE58;
+	
+}
+.notify_Report>form>input[type="reset"]{
+	width: 200px;
+    margin: 0 auto;
+    height: 50px;
+    background: #9BCE58;
+    color: white;
+    outline: none;
+    border: 3px solid;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.notify_Report>form>input[type="reset"]:hover{
+	background: white;
+	color: #9BCE58;
+	
+}
+
+

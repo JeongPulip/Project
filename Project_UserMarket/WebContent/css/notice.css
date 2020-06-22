@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+
+#container {
+	flex-direction:column;
+	margin: 0 auto;
+	width: 80%;
+}
+
+.notice_Title {
+	font-size: 40px;
+	margin-top: 50px;
+	text-align: left;
+}
+
+
+.notice_Table{
+	margin: 50px auto;
+	width: 100%;
+}
+
+.notice_List_Title , .notice_List_Date{
+	padding: 10px;
+	border-top: 3px solid;
+	font-weight: bold !important;
+	border-bottom: 1px;
+	border-collapse: collapse;
+	font-size: 20px;
+}
+
+.notice_List_Tilte{
+	width: 70%;
+}
+ 
+.notice_List_Date{
+	width: 30%; 
+}
+
+.notice_List_Titel_In{
+	text-align: left ;
+}
+
+.notice_List_Titel_In, .notice_List_Date_In{
+	padding: 10px;
+    font-size: 20px;
+}
+
+.notice_Hover *:hover{
+	color:red;
+	cursor: pointer;
+}
+
+

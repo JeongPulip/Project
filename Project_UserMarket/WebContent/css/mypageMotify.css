@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+#container {
+	flex-direction: column;
+	margin: 0 auto;
+	width: 80%;
+}
+
+.motify_Title {
+	font-size: 50px;
+	text-align: left;
+}
+
+.motify_User {
+	display: flex;
+	flex-direction: row;
+	margin: 50px auto;
+	width: 100%;
+	height: 650px;
+}
+
+.motify_User_Img {
+	flex: 1;
+	border: 1px solid;
+	margin: 10px;
+	padding: 10px;
+}
+
+.motify_User_Img>img {
+	width: 100%;
+	height: 60%;
+}
+
+.motify_User_Info {
+	flex: 2;
+	border: 1px solid;
+	margin: 10px auto;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	font-size: 18px;
+}
+
+.motify_User_Info_ID {
+	font-size: 30px;
+	padding-bottom: 30px;
+}
+
+.motify_User_Info_Block {
+	display: flex;
+	flex-direction: row;
+	margin: 15px 0;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	vertical-align: baseline;
+}
+
+.motify_User_Info_Title {
+	flex: 1;
+}
+
+.motify_User_Info_Input {
+	flex: 3;
+	text-align: left;
+	font-size: 18px;
+	
+}
+
+.motify_User_Info_Input>select{
+	width: 100px;
+}
+
+.motify_User_Info_Input>input[type="button"]{ 
+	width: 100px;
+    margin: 0 auto;
+    height: 30px;
+    background: #9BCE58;
+    color: white;
+    outline: none;
+    border: 3px solid;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+
+}
+
+.motify_User_Info_Input>input[type="button"]:hover{
+	background: white;
+	color: #9BCE58;
+}
+
+.motify_Btn{
+	margin: 10px auto;
+	margin-top: 30px;
+}
+
+
+.motify_Btn>input[type="submit"]{
+	width: 200px;
+	height: 50px;
+    margin: 0 auto;
+    height: 30px;
+    background: #9BCE58;
+    color: white;
+    outline: none;
+    border: 3px solid;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.motify_Btn>input[type="submit"]:hover{
+	background: white;
+	color: #9BCE58;
+}
+
+
+
+.motify_Btn>input[type="button"]{
+	width: 200px;
+	height: 50px;
+    margin: 0 auto;
+    height: 30px;
+    background: #DDE787;
+    color: white;
+    outline: none;
+    border: 3px solid;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+
+}
+
+.motify_Btn>input[type="button"]:hover{
+	background: white;
+	color: #DDE787;
+}
+
+

@@ -1,0 +1,340 @@
+@charset "UTF-8";
+
+
+
+#container{
+	flex-direction:column;
+	width: 100%;
+	margin: 0 auto;
+}
+
+
+table {
+   margin: 0 auto;
+   padding: 20px;
+   width: 70%;
+   min-width: 320px;
+   max-width: 700px;
+   text-align: center;
+} 
+
+form {
+   text-align: center;
+}
+
+table input, select {
+   min-height: 30px;
+}
+
+table input[type='text'], input[type='password'], input[type='date'] {
+   width: 100%;
+}
+
+table input[type='date'] {
+   text-align: left;
+}
+
+table input[type='tel'] {
+		cursor: pointer;
+		display: inline-block;
+		height: 40px;
+		line-height: 40px;
+		padding: 0 10px;
+		color: BLACK;
+		border: 2px solid transparent;
+		border-radius: 10px;
+		border-right-color: rgb(96, 199, 216);
+		border-left-color: rgb(221, 231, 135);
+		background: linear-gradient(to left, rgb(96, 199, 216) 0%,
+			rgb(96, 199, 216) 70%, transparent 70%, transparent 85%,
+			rgb(221, 231, 135) 85%, rgb(221, 231, 135) 100%) top/100% 2px,
+			linear-gradient(to left, rgb(221, 231, 135) 0%, rgb(96, 199, 216)
+			100%) bottom/100% 2px;
+	
+		background-repeat: no-repeat;
+		width: 40%;
+		outline: none;
+}
+
+table input[type='button'] {
+	width: 25%;
+    margin: 0 auto;
+    height: 40px;
+    background: #9BCE58;
+    color: white;
+    outline: none;
+    border: 3px solid;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+} 
+
+table input[type='button']:hover{
+	background: white;
+	color: #9BCE58;
+}
+
+.signupinput2 input[type='text'], select {
+		cursor: pointer;
+		display: inline-block;
+		height: 40px;
+		line-height: 40px;
+		padding: 0 10px;
+		color: BLACK;
+		border: 2px solid transparent;
+		border-radius: 10px;
+		border-right-color: rgb(96, 199, 216);
+		border-left-color: rgb(221, 231, 135);
+		background: linear-gradient(to left, rgb(96, 199, 216) 0%,
+			rgb(96, 199, 216) 70%, transparent 70%, transparent 85%,
+			rgb(221, 231, 135) 85%, rgb(221, 231, 135) 100%) top/100% 2px,
+			linear-gradient(to left, rgb(221, 231, 135) 0%, rgb(96, 199, 216)
+			100%) bottom/100% 2px;
+		background-repeat: no-repeat;
+		width: 20%;
+ 
+}
+td.signupinput2 {
+
+    position: relative;
+    left: -50px;
+}
+
+/* 
+@media only screen and (max-width: 360px) {
+
+   .type1 {
+      border-top: 2px solid;
+      border-bottom: 1px solid;
+      float: "center";
+   }
+   .type1 td {
+      padding: 10px 0;
+      border-top: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+      font-size: 15px;
+   }
+   .type1 tr:first-child td {
+      border-top: none
+   }
+   
+   .type1 td {
+      padding-left: 20px;
+      padding-right: 20px;
+   }
+}
+ */
+.type1 {
+   /*border-top: 2px solid;
+   border-bottom: 1px solid;
+   */
+   float: "center";
+   height: 100%;
+   width: 420px;
+   margin: 0 auto;
+   background-color: #0120;
+   border-color: white;
+}
+
+.type1 td {
+   margin: 20px;
+   padding: 10px 0;
+    border-color: white;
+border:none;
+}
+
+.type1 tr:first-child td {
+       border: none;
+} /* 선 중복 배제  */
+
+
+.symbol {
+   margin: 0 auto;
+   padding: 0 5px 0;
+   color: red;
+}
+
+#signupTitle{
+   font-size: 30px;
+   margin: 30px;
+}
+
+.signupText {
+   text-align: left;
+}
+
+.signupinput{
+   text-align: left;
+   padding: 10px 80px 10px 20px;;
+   width: 100%;
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+}
+
+h3 {
+   padding: 30px;
+}
+
+.active {
+   background-color: #4CAF50;
+   color: white;
+}
+
+.clear {
+   text-align: "center";
+   background-color: green;
+   text-color: "black";
+}
+
+.info {
+   font-size: 14px;
+   color: #888;
+}
+
+.icon-bar {
+   position: fixed;
+   top: 50%;
+   right: 2%;
+   transform: translateY(-50%);
+}
+
+.icon-bar a {
+   display: block;
+   text-align: center;
+   padding: 16px;
+   transition: all 0.3s ease;
+   color: white;
+   font-size: 20px;
+}
+
+.icon-bar a:hover {
+   background-color: #000;
+}
+
+.facebook {
+   background: #3B5998;
+   color: white;
+}
+
+.twitter {
+   background: #55ACEE;
+   color: white;
+}
+
+.google {
+   background: #dd4b39;
+   color: white;
+}
+
+.linkedin {
+   background: #007bb5;
+   color: white;
+}
+
+.phone {
+   background: white;
+   color: black;
+}
+
+.content {
+   margin-right: 75px;
+   font-size: 30px;
+}
+
+.fa.fa-search {
+   float: right;
+   width: 5%;
+   padding: 10px;
+   background: #2196F3;
+   color: white;
+   font-size: 17px;
+   border: 1px solid grey;
+   border-left: none;
+   cursor: pointer;
+   text-align: center;
+}
+
+table input[type='text'], input[type='password'], input[type='date'] {
+		cursor: pointer;
+		display: inline-block;
+		height: 40px;
+		line-height: 40px;
+		padding: 0 10px;
+		color: BLACK;
+		border: 2px solid transparent;
+		border-radius: 10px;
+		border-right-color: rgb(96, 199, 216);
+		border-left-color: rgb(221, 231, 135);
+		background: linear-gradient(to left, rgb(96, 199, 216) 0%,
+			rgb(96, 199, 216) 70%, transparent 70%, transparent 85%,
+			rgb(221, 231, 135) 85%, rgb(221, 231, 135) 100%) top/100% 2px,
+			linear-gradient(to left, rgb(221, 231, 135) 0%, rgb(96, 199, 216)
+			100%) bottom/100% 2px;
+		/*  linear-gradient(to left, rgb(116, 58, 213) 0%,
+			rgb(186, 58, 143) 70%, transparent 70%, transparent 85%,
+			rgb(201, 58, 128) 85%, rgb(213, 58, 157) 100%) top/100% 2px,
+			linear-gradient(to left, #743ad5 0%, #d53a9d 100%) bottom/100% 2px; */
+		background-repeat: no-repeat;
+		width: 70%;
+		outline: none;
+	}
+
+   .sidenav {
+      padding-top: 15px;
+   }
+   .sidenav a {
+      font-size: 18px;
+   }
+   .mobile-container {
+      max-width: 480px;
+      margin: auto;
+      background-color: #555;
+      height: 500px;
+      color: white;
+      border-radius: 10px;
+   
+}
+.sns {
+    position: absolute;
+    top: 1820px;
+    width: 400px;
+    left: -30px;
+}
+
+input[type="submit"]{
+    margin: 0 auto;
+    height: 40px;
+    background: #9BCE58;
+    color: white;
+    outline: none;
+    border: 3px solid;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover{
+	background: white;
+	color: #9BCE58
+}
+
+
+input[type="reset"]{
+    margin: 0 auto;
+    height: 40px;
+    background: #DDE787;
+    color: white;
+    outline: none;
+    border: 3px solid;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+input[type="reset"]:hover{
+	background: white;
+	color: #DDE787;
+}

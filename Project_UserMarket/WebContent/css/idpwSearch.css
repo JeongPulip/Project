@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+#container {
+	display: flex;
+	flex-direction: row;
+	width: 80%;
+	margin: 150px auto;
+}
+
+.research_IDPW {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	padding: 20px;
+	width: 500px;
+	height: 250px;
+	border: 1px solid transparent;
+	border-radius: 20px;
+	left: -45px;
+	top: -25px;
+	border-right-color: rgb(96, 199, 216);
+	border-left-color: rgb(221, 231, 135);
+	background: linear-gradient(to left, rgb(96, 199, 216) 0%,
+		rgb(96, 199, 216) 70%, transparent 70%, transparent 85%,
+		rgb(221, 231, 135) 85%, rgb(221, 231, 135) 100%) top/100% 2px,
+		linear-gradient(to left, rgb(221, 231, 135) 0%, rgb(96, 199, 216) 100%)
+		bottom/100% 2px;
+	background-repeat: no-repeat;
+}
+
+.research_Title {
+	font-size: 20px;
+	padding-bottom: 20px;
+}
+
+.research_Label {
+	float: left;
+	width: 30%;
+	text-align: right;
+}
+
+.research_Btn {
+    width: 200px;
+    margin: 20px auto;
+    height: 50px;
+    background: #9BCE58;
+    color: white;
+    outline: none;
+    border: 3px solid;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+.research_Btn:hover {
+	background: white;
+	color: #9BCE58;
+}
+
+.research_IDPW>form {
+	margin: 0 auto;
+	padding: 5px 0;
+	width: 100%;
+}
+
+.research_Block {
+	margin: 10px;
+}
+
+.research_Block * {
+	font-size: 20px;
+}
+
+input[type="text"] {
+	border: 0px;
+	border-bottom: 1px solid;
+	outline: none;
+}

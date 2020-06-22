@@ -1,0 +1,378 @@
+@charset "UTF-8";
+
+
+#container {
+	flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+.mypage_Title {
+	font-size: 50px;
+	text-align: left;
+	margin-top: 30px;
+}
+
+.dropuser_Btn>input[type="button"] {
+	width: 80px;
+    margin: 0 auto;
+    height: 20px;
+    background: #9BCE58;
+    color: white;
+    outline: none;
+    border: 3px solid;
+    font-size: 10px;
+    font-weight: bold;
+    float: right;
+    transition: 0.3s;
+}
+
+.dropuser_Btn>input[type="button"]:hover{
+	background: white;
+	color: #9BCE58;
+}
+
+/* 사용자 정보img */
+.mypage_User {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    width: 100%;
+    height: 350px;
+}
+
+.mypage_User_Img {
+    flex: 1;
+    /* border: 1px solid; */
+    /* margin: 10px; */
+    padding: 10px;
+}
+
+
+.mypage_User_Img>img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+
+/* 사용자 정보 Info  */
+
+.mypage_User_Info {
+  	border: 1px solid;
+    margin: 10px auto;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    height: 100%;
+    width: 100%;
+}
+
+.mypage_User_Info_ID {
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.mypage_User_Info_Block {
+	display: flex;
+	flex-direction: row;
+	margin: 15px 0;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.mypage_User_Info_Title {
+	flex: 1;
+}
+
+.mypage_User_Info_Input {
+	flex: 3;
+}
+
+
+.mypage_Modify_Btn {
+	text-align: right;
+}
+
+.mypage_Modify_Btn>button {
+
+    width: 100px;
+    margin: 0 auto;
+    height: 20;
+    background: #9BCE58;
+    color: white;
+    outline: none;
+    border: 3px solid;
+    font-size: 13px;
+    transition: 0.3s;
+
+}
+
+.mypage_Modify_Btn>button:hover {
+	background: white;
+	color: #9BCE58;
+}
+
+
+
+/* tab메뉴바 */
+
+.mypage_User_Board {
+	display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: auto;
+    margin-top: 50px;
+}
+
+.mypage_User_tab {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom:5px;
+    overflow: hidden;
+}
+
+.mypage_User_tab button{
+	width: 100%;
+	background: inherit;
+	transition:0.5s;
+}
+
+.mypage_User_tab button:hover{
+	background: #9BCE58;
+}
+
+.mypage_User_tab button.active{
+	background: #9BCE58;
+}
+
+
+/* tab메뉴 공통 */
+.mypage_tabcontent{
+	border-top:0;
+	border: 1px solid;
+	height: 500px;
+	width: 100%;
+	margin: 0 auto;
+	display: none;
+	overflow: scroll;
+	overflow-x: hidden;
+	font-size:10px;
+}
+
+
+.mypage_tablink{
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 10px;
+}
+
+.mypage_MyBoard {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 5px;
+    vertical-align: middle;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px 0 5px 0;
+    font-size: 10px;
+    
+}
+
+
+
+.mypage_MyBoard>* {
+    text-align: center;
+    overflow: hidden;
+    vertical-align: middle;
+    margin: auto 10px;
+    font-size: 10px;
+}
+
+
+.mypage_MyBoard_Block{
+	border-bottom: 2px solid;
+}
+
+.mypage_Default_Table{
+	width: 100%;
+}
+
+ tr>*{
+	padding: 10px;
+} 
+
+.tr_Hover:hover{
+	color:red;
+	cursor: pointer;
+}
+
+/* 내 게시물 */
+
+.myboard_I{
+	width:5%;
+}
+.myboard_Num{
+	width: 10%;	
+}
+.myboard_Title{
+	width: 40%;
+}
+.myboard_CNum{
+	width: 5%;
+}
+.myboard_Hit{
+	width: 5%;
+}
+.myboard_JNum{
+	width:5%
+}
+.myboard_WDate{
+	width: 15%;
+}
+.myboard_P{
+	width:15%;
+}
+
+/* 내 댓글 */
+
+.commnet_num{
+	width: 10%;
+}
+
+.commnet_value{
+	width: 40%;
+}
+
+.commnet_date{
+	width: 20%;
+}
+
+.commnet_title{
+	width: 40%;
+}
+
+/* 찜목록에서 찜  */
+
+.myboard_I_a{
+	width:5%;
+}
+.myboard_Num_a{
+	width: 10%;	
+}
+.myboard_Title_a{
+	width: 30%;
+}
+.myboard_CNum_a{
+	width: 5%;
+}
+.myboard_Hit_a{
+	width: 5%;
+}
+.myboard_JNum_a{
+	width:5%
+}
+.myboard_WDate_a{
+	width: 10%;
+}
+.myboard_P_a{
+	width:10%;
+}
+.myboard_pop{
+	width: 10%;
+}
+
+.delJJim{
+	background: #9BCE58;
+	font-size: 12px;
+	color: white;
+	outline: none;
+	transition: 0.3s;
+	border: 1px solid #9BCE58;
+}
+
+.delJJim:hover{
+	background: white;
+	color: #9BCE58;
+}
+/* 내 알림 */
+.myboard_Title_b{
+	width: 30%;
+	text-align: left;
+}
+
+
+/* 알림 display */
+.notice_Num{
+	border: 1px solid red;
+    color: white;
+    border-radius: 50%;
+    background-color: red;
+    font-family: inherit;
+    padding: 2px 5px 2px 5px;
+    font-size: 15px;
+}
+
+
+
+.mypage_myBoard_All_Check{
+	position: relative;
+    left: 170px;
+    top: 4px;
+
+}
+
+#mypage_Notice_Check{
+	background: #9BCE58;
+	font-size: 12px;
+	color: white;
+	outline: none;
+	transition: 0.3s;
+	border: 1px solid #9BCE58;
+}
+
+#mypage_Notice_Check:hover{
+	background: white;
+	color: #9BCE58;
+}
+
+#mypage_Notice_All_Check{
+	background: #9BCE58;
+	font-size: 12px;
+	color: white;
+	outline: none;
+	transition: 0.3s;
+	border: 1px solid #9BCE58;
+}
+
+#mypage_Notice_All_Check:hover{
+	background: white;
+	color: #9BCE58;
+}
+
+.checkN{
+	background: #9BCE58;
+	font-size: 12px;
+	color: white;
+	outline: none;
+	transition: 0.3s;
+	border: 1px solid #9BCE58;
+}
+
+.checkN:hover{
+	background: white;
+	color: #9BCE58;
+}
+
+
+

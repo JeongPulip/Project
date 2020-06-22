@@ -1,0 +1,236 @@
+@charset "UTF-8";
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+html body  {
+    font-family: 'Jua', sans-serif;
+}
+
+
+.list_Title, .list_Location, .list_Price {
+	margin: 0px;
+}
+#searchForm>input[type="submit"] {
+    font-family: FontAwesome;
+    padding: 10px;
+    position: absolute;
+    top: 8%;
+    /* right: 14%; */
+    border: 0;
+    outline: 0;
+    background-color: white;
+}
+
+
+/* 게시글 아이콘 */
+.mainHome_Popular_Title {
+	font-size: 50px;
+	text-align: left;
+	border-bottom: 5px solid;
+	padding: 20px;
+}
+
+article>img {
+	width: 130px;
+	height: 130px;
+}
+
+.info {
+	flex-direction: row;
+	flex-wrap: wrap-reverse;
+	margin-bottom: 30px;
+}
+
+.mainHome_Popular_Title {
+	font-size: 50px;
+	text-align: left;
+	border-bottom: 5px solid;
+	padding: 20px;
+}
+
+.ListText {
+	text-align: left;
+	margin: 0px;
+	padding: 0px;
+}
+
+.list_Num {
+	float: left;
+}
+
+.list_State {
+	float: right;
+}
+
+
+
+.list_Location {
+	color: #808080;
+}
+
+.list_Tilte {
+	font-weight: bolder;
+	font-size: 12px;
+}
+
+.list_Price {
+	color: #fab82e;
+}
+
+/* 배너 */
+.slideshow-container {
+    flex-direction: column;
+    max-width: 600px;
+
+    margin: 20px auto 50px auto;
+    position: relative;
+    top: 180px;
+}
+
+.mySlides {
+	/* display: none; */
+	flex-direction: co
+}
+.mySlides img {
+    display: inline-table;
+    position: relative;
+    top: -130px;
+}
+
+.prev {
+	left: 0px;
+}
+
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 5%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%; /* 동그라미 */
+	display: inline-block;
+	transition: background-color 0.6s ease; /* 트랜직션 설정 */
+	position: relative;
+	top:-150px;
+}
+.dot:hover{
+	background-color: green;
+}
+
+article {
+    border: 0px solid;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 0 10px 0;
+    width: 130px;
+    height: 230px;
+    cursor: pointer;
+}
+/* 애니메이션 설정 */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@
+-webkit-ketframes fade {
+	form {opacity: .4
+}
+
+to {
+	opacity: 1
+}
+
+@
+keyframes fade {
+	form {opacity: .4
+}
+
+to {
+	opacity: 1
+}
+
+
+#section_Popular {
+	position: absolute;
+	top: 500px;
+	display: inline-block;
+	width: 100%;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	float: left;
+	margin: 0 auto;
+}
+
+/*게시글 전체틀  */
+
+.sns {
+    position: absolute;
+    top: 1320px;
+    width: 400px;
+    left: 120px;
+}
+
+#footer_Container {
+    flex-direction: column;
+    background: #9BCE58;
+    padding: 50px;
+    position: relative;
+    height: 50px;
+    text-align: center;
+}
+.footer_tag {
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.footer_Info {
+    font-size: 10px;
+    left: 5px;
+}
+.footer_Copy {
+    font-size: 13px;
+    left: 50px;
+} 
+i.fa{
+	display: inline;
+	
+}

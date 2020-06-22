@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+
+#container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: 30px auto;
+}
+
+.edit_Title {
+	font-size: 50px;
+	text-align: left;
+	margin-bottom: 50px;
+}
+
+.edit_article {
+	margin: auto;
+	margin-bottom: 20px;
+	width: 100%;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	border: 1px solid transparent;
+    border-radius: 20px;
+    left: -45px;
+    top: -25px;
+    border-right-color: rgb(96, 199, 216);
+    border-left-color: rgb(221, 231, 135);
+    background: linear-gradient(to left, rgb(96, 199, 216) 0%, rgb(96, 199, 216) 70%, transparent 70%, transparent 85%, rgb(221, 231, 135) 85%, rgb(221, 231, 135) 100%) top/100% 2px, linear-gradient(to left, rgb(221, 231, 135) 0%, rgb(96, 199, 216) 100%) bottom/100% 2px;
+    background-repeat: no-repeat;
+}
+
+.edit_User_Block {
+	display: flex;
+    flex-direction: column;
+    margin: 5px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.edit_User_Title {
+	flex: 1;
+    flex-grow: 1;
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.edit_User_Value {
+	flex: 2;
+    text-align: left;
+    width: 220px;
+    font-size: 15px;
+	
+}
+
+.edit_User_Block>textarea{
+	width: 100%;
+    height: 200px;
+    margin: 10px 0 20px 0;
+    resize: none;
+    background-color: white;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 20px;
+    padding: 10px;
+}
+
+label>input[type="radio"]{
+	display: none;
+}
+
+label>input[type="radio"]+span{
+	padding: 10px;
+    border: 1px solid;
+    border-radius:5px;
+    margin: 0 5px;
+}
+
+label>input[type="radio"]:checked+span{
+	background: #9BCE58;
+	border: 1px solid;
+}
+
+.edit_User_Value>select{
+	width: 150px;
+    height: 40px;
+    border: 2px solid;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 20px;
+}
+
+
+.edit_User_Value>input[type="text"]{
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid;
+    font-size: 20px;
+    outline: none;
+    font-family: inherit;
+}
+
+
+.edit_User_Block>input[type=submit], .edit_User_Block>input[type=button]{
+	width: 200px;
+    margin: 0 auto;
+    height: 50px;
+    background: #9BCE58;
+    color: white;
+    outline: none;
+    border: 3px solid;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.edit_User_Block>input[type=submit]:hover, .edit_User_Block>input[type=button]:hover{
+	
+	background: white;
+	color: #9BCE58;
+	
+}
+
+input[type="file"]:{
+	width: 200px;
+	height: 100px;
+  
+}

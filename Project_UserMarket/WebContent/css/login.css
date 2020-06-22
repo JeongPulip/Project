@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+#container{
+	flex-direction: column;
+	margin: 0 auto;
+	width: 80%;
+}
+
+.login {
+	flex-direction: column;
+    display: flex;
+    margin: 30px auto;
+    width: 400px;
+}
+
+#input>form>input[type="text"], input[type="password"]{
+	width: 80%;
+    margin-bottom: 10px;
+    padding: 10px 15px 10px 15px;
+    font-size: 18px;
+    border: 0;
+    border-bottom: 2px solid #c2c9c9;
+}
+
+#userSupport>*:focus, input:focus{
+	outline: none;
+}
+
+#input>form>input[type="submit"]{
+	background: #9BCE58;
+	padding: 10px 15px;
+	font-size: 15px;
+	color: white;
+}
+
+
+#input>form>input[type="submit"]:hover{
+	background: white;
+	border: 2px solid #9BCE58;
+	padding: 8px 13px;
+	color: black;
+	transition: 0.2s;
+}
+
+
+
+#loginTitle { /* '로그인 폰트' */
+    font-size: 40px;
+    margin: 30px auto;
+    margin-bottom: 0px;
+}
+
+#userinfo {
+	margin: 0px 0px 10px 0px;
+	padding: 10px 80px 10px 20px;
+}
+
+#loginBtn {
+	width: 90%;
+	flex: 2;
+	border: 0;
+	background-color: #60C7D8;
+}
+
+#userSupport {
+    border-top: 2px solid;
+    flex-direction: row;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+#userSupport>button[id="search"]{
+	flex :2;
+	margin-right:10px; 
+	font-size: 15px;
+}
+
+#userSupport>button[id="userAdd"]{
+	flex: 2;
+	
+}
+
+#userSupport>button[id="search"],#userSupport>button[id="userAdd"]{
+	border: 0px;
+	background: white;
+}
+
+#userSupport>button[id="search"]:focus,#userSupport>button[id="userAdd"]:focus{
+	outline: none;
+}
+
+#login_check{
+    height: 10px;
+    padding-bottom: 30px;
+    font-size: 20px;
+	
+}
+

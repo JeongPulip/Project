@@ -1,0 +1,383 @@
+@charset "UTF-8";
+
+/* 기본 설정 */
+
+/* http://meyerweb.com/eric/tools/css/reset/  
+   v2.0 | 20110126 
+   License: none (public domain) 
+    
+   초기화 
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+	blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
+	em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+	b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+	details, embed, figure, figcaption, footer, header, hgroup, menu, nav,
+	output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup,
+	menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 기본(필요한) css */
+body {
+	margin: 10px 20px;
+	padding: 0;
+	font-family: 'Nanum Gothic', sans-serif;
+	text-align: center;
+}
+
+a:link {
+	text-decoration: none;
+	color: #000;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #000;
+}
+
+button:visited {
+	color: #000;
+	outline: 0;
+}
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+html body {
+	font-family: 'Jua', sans-serif;
+}
+
+#wrap>* {
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/* nav 메뉴  */
+#header {
+	display: flex;
+	flex-direction: column;
+}
+
+#headerUp {
+	display: flex;
+	flex-direction: column;
+}
+
+#headerRow {
+	padding: 0;
+	width: 100%;
+}
+
+.title_img {
+	width: 100%;
+}
+
+.icon {
+	width: 40px;
+	height: 30px;
+	text-align: center;
+	overflow: hidden;
+	margin: 0 auto 10px;
+}
+
+.icon .fa {
+	width: 100%;
+	height: 100%;
+	line-height: 30px;
+	font-size: 30px;
+	transition: 0.5s;
+	color: #000;
+}
+
+a:hover .icon .fa {
+	transform: translateY(-100%);
+}
+
+a:hover .icon .fa:last-child {
+	color: white;
+}
+
+/*로그인 회원가입 텍스트 안보이기 아이콘으로 대체  */
+#nav {
+	border-radius: 5px;
+	border-top: 1px solid #60C7D8;
+	border-bottom: 1px solid #60C7D8;
+	background: #60C7D8;
+	margin-top: 30px;
+	height: 80px;
+	display: flex;
+	float: left;
+	width: 100%;
+}
+
+#nav>a {
+	float: left;
+	padding: 10px;
+	font-size: 12px;
+	margin: 0 auto;
+}
+
+#nav a:hover {
+	color: white;
+	transition: 0.5s;
+	border-top: 2px solid;
+	padding-top: 18px;
+	border-bottom: 2px solid;
+	padding-bottom: 18px;
+}
+
+#title {
+	margin: 0 auto;
+	width: 100%;
+}
+
+i.fa.fa-unlock {
+	position: absolute;
+	top: 50px;
+	right: 0px;
+	color: #63C7D8;
+}
+
+i.fa.fa-user-plus {
+	position: absolute;
+	top: 50px;
+	right: 40px;
+	color: #63C7D8;
+}
+
+/* .fa-bell:before {
+	position: absolute;
+	top: 50px;
+	right: 100px;
+	color: #63C7D8;
+	content: "\f0f3";
+}
+ */
+hr {
+	display: none;
+}
+
+i.fa.fa-search {
+	position: absolute;
+	top: 70px;
+	right: 20%;
+}
+
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%; /* 동그라미 */
+	display: inline-block;
+	transition: background-color 0.6s ease; /* 트랜직션 설정 */
+}
+
+span.dot.active {
+	background-color: green;
+}
+
+i.fa.fa-user {
+	position: absolute;
+	position: fixed;
+	bottom: 0;
+	right: 30px;
+}
+
+#main {
+	display: inline;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+}
+
+.slash, .notice, .signup {
+	display: none;
+}
+
+.login {
+	display: none;
+}
+/*검색  */
+#searchinput {
+	display: none;
+}
+
+#textSearch {
+	border: 0;
+	display: inline;
+	width: 80%;
+	margin: 0 auto;
+	border-bottom: 2px solid #60C7D8;
+	padding: 5px;
+	font-family: inherit;
+	font-size: 15px;
+}
+
+}
+#searchicon {
+	position: absolute;
+	top: 22%;
+	right: 20%;
+	font-size: 15px;
+}
+
+#searchForm {
+	flex-direction: row;
+}
+
+#header_Search_Block>#header_Search_Icon{
+	font-family: FontAwesome;
+	padding: 10px;
+	border: 0;
+	outline: 0;
+	background-color: white;
+	color: #60C7D8;
+	font-size: 20px;
+}
+
+#userlogin {
+	font-size: 13px;
+	margin-top: 30px;
+	text-align: right;
+}
+
+/* footer */
+#footer {
+	position: absolute;
+	left: 0;
+	bottom: auto;
+	width: 100%;
+	padding-top: 15px;
+}
+
+#footer_Container {
+    flex-direction: column;
+    background: #DDE787;
+    padding-top: 50px;
+    margin-top: 50px;
+    height: 100%;
+    padding-bottom: 30px;
+    display: flex;
+}
+
+.footer_tag {
+	flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 8px;
+    padding-bottom: 30px;
+}
+
+.footer_Service_Check{
+	display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.footer_Service_Check>a{
+	padding: 0px;
+}
+
+#footer_navi{
+	border: 0px;
+	padddin: 0;
+}
+
+.footer_Up{
+  	display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer_Logo{
+    margin: 5%;
+}
+
+.footer_Logo>img{
+	max-width:100%;  
+}
+
+.footer_Company{
+    padding-bottom: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer_Company_Tilte{
+	font-size: 12px;
+    border-bottom: 1px solid #747474;
+    padding-bottom: 5px;
+    font-weight: 100;
+    text-align: left;
+}
+
+.footer_Company_Value{
+	font-size: 10px;
+	font-weight:50;
+	padding-top: 10px;
+	text-align: left;
+	color: #808080;
+}
+
+.footer_Company_Value>p>a{
+	color: #808080;
+}
+
+.footer_Company_Value>p>a:hover{
+	color: white;
+}
+.footer_Service{
+  	padding-right: 5px;
+    width: 50%;
+}
+
+
+.footer_Service_Check>a:hover{
+	color: white;
+}
